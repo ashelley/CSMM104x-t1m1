@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include "DebugHelpers.h"
 
+//#define EIGEN_INITIALIZE_MATRICES_BY_ZERO 1
+
 float totalTime = 0;
 
 bool ExplicitEuler::stepScene( TwoDScene& scene, scalar dt )
@@ -9,12 +11,20 @@ bool ExplicitEuler::stepScene( TwoDScene& scene, scalar dt )
     VectorXs& pos = scene.getX();
     VectorXs& velocity = scene.getV();
     
-    int numberOfDimensions = pos.cols();
-    
-    printf("Number of dimensions: %d\n", numberOfDimensions);    
-    DEBUGPrintVector(pos);
+    int numberOfDimensions = pos.rows();
         
-    //scene->accumulateGradU( VectorXs& F, const VectorXs& dx = VectorXs(), const VectorXs& dv = VectorXs() );
+    //printf("Number of dimensions: %d\n", numberOfDimensions);    
+    //DEBUGPrintVector(pos);
+    
+    VectorXs gravity(numberOfDimensions);
+    gravity.setZero();
+    
+    //gravity.resize(numberOfDimensions);    
+    
+    //printf("Gravity initialized:\n");
+    //DEBUGPrintVector(gravity);            
+    //
+    scene.accumulateGradU(gravity);
     
     
     FILE* logFile;
@@ -31,8 +41,11 @@ bool ExplicitEuler::stepScene( TwoDScene& scene, scalar dt )
         fprintf(logFile, "%f\t%f\n",totalTime,scene.computeKineticEnergy());
         fclose(logFile);            
     }
+       
+    pos += velocity * dt;
+    velocity += gravity * dt;
     
-    scene.setPosition(0,pos + (velocity * dt));       
+    //scene.setPosition(0,pos + (velocity * gravity) dt));       
     
     return true;
 }
