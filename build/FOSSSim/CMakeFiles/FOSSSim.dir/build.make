@@ -75,32 +75,9 @@ FOSSSim/CMakeFiles/FOSSSim.dir/TwoDScene.cpp.o.provides: FOSSSim/CMakeFiles/FOSS
 
 FOSSSim/CMakeFiles/FOSSSim.dir/TwoDScene.cpp.o.provides.build: FOSSSim/CMakeFiles/FOSSSim.dir/TwoDScene.cpp.o
 
-FOSSSim/CMakeFiles/FOSSSim.dir/ExplicitEuler.cpp.o: FOSSSim/CMakeFiles/FOSSSim.dir/flags.make
-FOSSSim/CMakeFiles/FOSSSim.dir/ExplicitEuler.cpp.o: ../FOSSSim/ExplicitEuler.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/codio/workspace/build/CMakeFiles $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object FOSSSim/CMakeFiles/FOSSSim.dir/ExplicitEuler.cpp.o"
-	cd /home/codio/workspace/build/FOSSSim && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/FOSSSim.dir/ExplicitEuler.cpp.o -c /home/codio/workspace/FOSSSim/ExplicitEuler.cpp
-
-FOSSSim/CMakeFiles/FOSSSim.dir/ExplicitEuler.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FOSSSim.dir/ExplicitEuler.cpp.i"
-	cd /home/codio/workspace/build/FOSSSim && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/codio/workspace/FOSSSim/ExplicitEuler.cpp > CMakeFiles/FOSSSim.dir/ExplicitEuler.cpp.i
-
-FOSSSim/CMakeFiles/FOSSSim.dir/ExplicitEuler.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FOSSSim.dir/ExplicitEuler.cpp.s"
-	cd /home/codio/workspace/build/FOSSSim && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/codio/workspace/FOSSSim/ExplicitEuler.cpp -o CMakeFiles/FOSSSim.dir/ExplicitEuler.cpp.s
-
-FOSSSim/CMakeFiles/FOSSSim.dir/ExplicitEuler.cpp.o.requires:
-.PHONY : FOSSSim/CMakeFiles/FOSSSim.dir/ExplicitEuler.cpp.o.requires
-
-FOSSSim/CMakeFiles/FOSSSim.dir/ExplicitEuler.cpp.o.provides: FOSSSim/CMakeFiles/FOSSSim.dir/ExplicitEuler.cpp.o.requires
-	$(MAKE) -f FOSSSim/CMakeFiles/FOSSSim.dir/build.make FOSSSim/CMakeFiles/FOSSSim.dir/ExplicitEuler.cpp.o.provides.build
-.PHONY : FOSSSim/CMakeFiles/FOSSSim.dir/ExplicitEuler.cpp.o.provides
-
-FOSSSim/CMakeFiles/FOSSSim.dir/ExplicitEuler.cpp.o.provides.build: FOSSSim/CMakeFiles/FOSSSim.dir/ExplicitEuler.cpp.o
-
 FOSSSim/CMakeFiles/FOSSSim.dir/SimpleGravityForce.cpp.o: FOSSSim/CMakeFiles/FOSSSim.dir/flags.make
 FOSSSim/CMakeFiles/FOSSSim.dir/SimpleGravityForce.cpp.o: ../FOSSSim/SimpleGravityForce.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/codio/workspace/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/codio/workspace/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object FOSSSim/CMakeFiles/FOSSSim.dir/SimpleGravityForce.cpp.o"
 	cd /home/codio/workspace/build/FOSSSim && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/FOSSSim.dir/SimpleGravityForce.cpp.o -c /home/codio/workspace/FOSSSim/SimpleGravityForce.cpp
 
@@ -121,18 +98,41 @@ FOSSSim/CMakeFiles/FOSSSim.dir/SimpleGravityForce.cpp.o.provides: FOSSSim/CMakeF
 
 FOSSSim/CMakeFiles/FOSSSim.dir/SimpleGravityForce.cpp.o.provides.build: FOSSSim/CMakeFiles/FOSSSim.dir/SimpleGravityForce.cpp.o
 
+FOSSSim/CMakeFiles/FOSSSim.dir/ExplicitEuler.cpp.o: FOSSSim/CMakeFiles/FOSSSim.dir/flags.make
+FOSSSim/CMakeFiles/FOSSSim.dir/ExplicitEuler.cpp.o: ../FOSSSim/ExplicitEuler.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/codio/workspace/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object FOSSSim/CMakeFiles/FOSSSim.dir/ExplicitEuler.cpp.o"
+	cd /home/codio/workspace/build/FOSSSim && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/FOSSSim.dir/ExplicitEuler.cpp.o -c /home/codio/workspace/FOSSSim/ExplicitEuler.cpp
+
+FOSSSim/CMakeFiles/FOSSSim.dir/ExplicitEuler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FOSSSim.dir/ExplicitEuler.cpp.i"
+	cd /home/codio/workspace/build/FOSSSim && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/codio/workspace/FOSSSim/ExplicitEuler.cpp > CMakeFiles/FOSSSim.dir/ExplicitEuler.cpp.i
+
+FOSSSim/CMakeFiles/FOSSSim.dir/ExplicitEuler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FOSSSim.dir/ExplicitEuler.cpp.s"
+	cd /home/codio/workspace/build/FOSSSim && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/codio/workspace/FOSSSim/ExplicitEuler.cpp -o CMakeFiles/FOSSSim.dir/ExplicitEuler.cpp.s
+
+FOSSSim/CMakeFiles/FOSSSim.dir/ExplicitEuler.cpp.o.requires:
+.PHONY : FOSSSim/CMakeFiles/FOSSSim.dir/ExplicitEuler.cpp.o.requires
+
+FOSSSim/CMakeFiles/FOSSSim.dir/ExplicitEuler.cpp.o.provides: FOSSSim/CMakeFiles/FOSSSim.dir/ExplicitEuler.cpp.o.requires
+	$(MAKE) -f FOSSSim/CMakeFiles/FOSSSim.dir/build.make FOSSSim/CMakeFiles/FOSSSim.dir/ExplicitEuler.cpp.o.provides.build
+.PHONY : FOSSSim/CMakeFiles/FOSSSim.dir/ExplicitEuler.cpp.o.provides
+
+FOSSSim/CMakeFiles/FOSSSim.dir/ExplicitEuler.cpp.o.provides.build: FOSSSim/CMakeFiles/FOSSSim.dir/ExplicitEuler.cpp.o
+
 # Object files for target FOSSSim
 FOSSSim_OBJECTS = \
 "CMakeFiles/FOSSSim.dir/TwoDScene.cpp.o" \
-"CMakeFiles/FOSSSim.dir/ExplicitEuler.cpp.o" \
-"CMakeFiles/FOSSSim.dir/SimpleGravityForce.cpp.o"
+"CMakeFiles/FOSSSim.dir/SimpleGravityForce.cpp.o" \
+"CMakeFiles/FOSSSim.dir/ExplicitEuler.cpp.o"
 
 # External object files for target FOSSSim
 FOSSSim_EXTERNAL_OBJECTS =
 
 FOSSSim/FOSSSim: FOSSSim/CMakeFiles/FOSSSim.dir/TwoDScene.cpp.o
-FOSSSim/FOSSSim: FOSSSim/CMakeFiles/FOSSSim.dir/ExplicitEuler.cpp.o
 FOSSSim/FOSSSim: FOSSSim/CMakeFiles/FOSSSim.dir/SimpleGravityForce.cpp.o
+FOSSSim/FOSSSim: FOSSSim/CMakeFiles/FOSSSim.dir/ExplicitEuler.cpp.o
 FOSSSim/FOSSSim: FOSSSim/CMakeFiles/FOSSSim.dir/build.make
 FOSSSim/FOSSSim: ../lib/libFOSSSimT1M1base.a
 FOSSSim/FOSSSim: /usr/lib/x86_64-linux-gnu/libGLU.so
@@ -153,8 +153,8 @@ FOSSSim/CMakeFiles/FOSSSim.dir/build: FOSSSim/FOSSSim
 .PHONY : FOSSSim/CMakeFiles/FOSSSim.dir/build
 
 FOSSSim/CMakeFiles/FOSSSim.dir/requires: FOSSSim/CMakeFiles/FOSSSim.dir/TwoDScene.cpp.o.requires
-FOSSSim/CMakeFiles/FOSSSim.dir/requires: FOSSSim/CMakeFiles/FOSSSim.dir/ExplicitEuler.cpp.o.requires
 FOSSSim/CMakeFiles/FOSSSim.dir/requires: FOSSSim/CMakeFiles/FOSSSim.dir/SimpleGravityForce.cpp.o.requires
+FOSSSim/CMakeFiles/FOSSSim.dir/requires: FOSSSim/CMakeFiles/FOSSSim.dir/ExplicitEuler.cpp.o.requires
 .PHONY : FOSSSim/CMakeFiles/FOSSSim.dir/requires
 
 FOSSSim/CMakeFiles/FOSSSim.dir/clean:

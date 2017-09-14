@@ -1,5 +1,6 @@
 #include "ExplicitEuler.h"
 #include <stdio.h>
+#include "DebugHelpers.h"
 
 float totalTime = 0;
 
@@ -10,7 +11,10 @@ bool ExplicitEuler::stepScene( TwoDScene& scene, scalar dt )
     
     int numberOfDimensions = pos.cols();
     
-    printf("Number of dimensions: %d\n", numberOfDimensions);
+    printf("Number of dimensions: %d\n", numberOfDimensions);    
+    DEBUGPrintVector(pos);
+        
+    //scene->accumulateGradU( VectorXs& F, const VectorXs& dx = VectorXs(), const VectorXs& dv = VectorXs() );
     
     
     FILE* logFile;
