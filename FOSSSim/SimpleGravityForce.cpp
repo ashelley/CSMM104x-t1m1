@@ -1,5 +1,6 @@
 #include "SimpleGravityForce.h"
 #include <stdio.h>
+#include "DebugHelpers.h"
 
 void SimpleGravityForce::addEnergyToTotal( const VectorXs& x, const VectorXs& v, const VectorXs& m, scalar& E )
 {
@@ -8,8 +9,8 @@ void SimpleGravityForce::addEnergyToTotal( const VectorXs& x, const VectorXs& v,
     assert( x.size()%2 == 0 );
     
     
-    printf("Running SimpleGravityForce::addEnergyToTotal gravity is: %f", this->m_gravity);
-    printf(x.format(CleanFmt))
+    printf("Running SimpleGravityForce::addEnergyToTotal");
+    DEBUGPrintVector(x);
     
     //E = E + this->m_gravity.dot(m);
     //E = -100.0;
@@ -25,5 +26,5 @@ void SimpleGravityForce::addGradEToTotal( const VectorXs& x, const VectorXs& v, 
     assert( x.size()%2 == 0 );
     
     printf("Running SimpleGravityForce::addGradEToTotal");
-    printf(x.format(CleanFmt))
+    DEBUGPrintVector(x);
 }

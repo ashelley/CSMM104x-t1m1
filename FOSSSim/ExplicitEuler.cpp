@@ -10,7 +10,8 @@ bool ExplicitEuler::stepScene( TwoDScene& scene, scalar dt )
     
     int numberOfDimensions = pos.cols();
     
-    printf("Number of dimensions: %d", numberOfDimensions);
+    printf("Number of dimensions: %d\n", numberOfDimensions);
+    
     
     FILE* logFile;
     if(!totalTime) {
