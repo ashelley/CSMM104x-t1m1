@@ -11,19 +11,28 @@ bool ExplicitEuler::stepScene( TwoDScene& scene, scalar dt )
     VectorXs& pos = scene.getX();
     VectorXs& velocity = scene.getV();
     
-    int numberOfDimensions = pos.rows();
+    int numberOfDimensions = 2;
+    int numberOfParticles = pos.rows() / numberOfDimensions;
         
-    //printf("Number of dimensions: %d\n", numberOfDimensions);    
-    //DEBUGPrintVector(pos);
+#if DEBUG_MODE
+    printf("Number of particles: %d\n", numberOfParticles);    
+    printf("size: %d\n", pos.size());
+    printf("pos:\n");    
+    DEBUGPrintVector(pos);
+    printf("velocity:\n");
+    DEBUGPrintVector(velocity);
+#endif    
     
-    VectorXs gravity(numberOfDimensions);
+    VectorXs gravity(numberOfDimensions * numberOfParticles);
     gravity.setZero();
     
     //gravity.resize(numberOfDimensions);    
+
+#if DEBUG_MODE
+    printf("Gravity initialized:\n");
+    DEBUGPrintVector(gravity);            
+#endif
     
-    //printf("Gravity initialized:\n");
-    //DEBUGPrintVector(gravity);            
-    //
     scene.accumulateGradU(gravity);
     
     
@@ -42,8 +51,23 @@ bool ExplicitEuler::stepScene( TwoDScene& scene, scalar dt )
         fclose(logFile);            
     }
        
-    pos += velocity * dt;
-    velocity += gravity * dt;
+    for(int i = 0; i < numberOfParticles; i++) {
+        if(!scene.isFixed(i)) {
+            int ix = i * numberOfDimensions + 0;
+            int iy = i * numberOfDimensions + 1;
+        
+            pos[ix] += velocity[ix] * dt;
+            pos[iy] += velocity[iy] * dt;
+
+            velocity[ix] += gravity[ix] * dt;     
+            velocity[iy] += gravity[iy] * dt;        
+        }
+    }
+    
+    //pos += velocity * dt;
+    //velocity += gravity * dt;   
+
+    //
     
     //scene.setPosition(0,pos + (velocity * gravity) dt));       
     

@@ -484,20 +484,6 @@ iostream
 Eigen/Core
 -
 
-/home/codio/workspace/FOSSSim/ExplicitEuler.cpp
-ExplicitEuler.h
-/home/codio/workspace/FOSSSim/ExplicitEuler.h
-stdio.h
--
-DebugHelpers.h
-/home/codio/workspace/FOSSSim/DebugHelpers.h
-
-/home/codio/workspace/FOSSSim/ExplicitEuler.h
-SceneStepper.h
-/home/codio/workspace/FOSSSim/SceneStepper.h
-MathDefs.h
-/home/codio/workspace/FOSSSim/MathDefs.h
-
 /home/codio/workspace/FOSSSim/Force.h
 Eigen/Core
 -
@@ -509,12 +495,6 @@ Eigen/Core
 -
 Eigen/StdVector
 -
-
-/home/codio/workspace/FOSSSim/SceneStepper.h
-TwoDScene.h
-/home/codio/workspace/FOSSSim/TwoDScene.h
-MathDefs.h
-/home/codio/workspace/FOSSSim/MathDefs.h
 
 /home/codio/workspace/FOSSSim/SimpleGravityForce.cpp
 SimpleGravityForce.h
@@ -531,12 +511,4 @@ Force.h
 /home/codio/workspace/FOSSSim/Force.h
 iostream
 -
-
-/home/codio/workspace/FOSSSim/TwoDScene.h
-Eigen/Core
--
-Eigen/StdVector
--
-Force.h
-/home/codio/workspace/FOSSSim/Force.h
 
